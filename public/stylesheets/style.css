@@ -3,8 +3,28 @@
     box-sizing: border-box;
 }
 body{
-    /* margin-top: 100px; */
+    padding-top: 100px;
 }
+
 .barDeNavigation{
     backdrop-filter: blur(5px);
+}
+.italic{
+    font-style: italic !important;
+}
+.underline{
+    text-decoration: underline !important;
+}
+.profileSidbar {
+    height: 80vh;
+    width: 100%;
+}
+.profileSidbar .pdp{
+    border: solid 10px white;
+    width: 170px;
+    height: 170px;
+    margin: 10px auto;
+}
+.prestataire{
+    background-color: rgb(247, 251, 255);
 }
