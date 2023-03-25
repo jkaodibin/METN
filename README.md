@@ -19,13 +19,17 @@ Le projet est organisé selon une architecture MVC (Modèle-Vue-Contrôleur) qui
 
 Pour lancer l'application en mode développement, exécutez la commande suivante:
 
-```bash npm run dev```
+```bash
+npm run dev
+```
 
 Cela lancera l'application avec un serveur de développement qui rechargera automatiquement le code à chaque modification.
 
 Pour lancer l'application en mode production, exécutez la commande suivante:
 
-```bash npm run start```
+```bash
+npm run start
+```
 
 Cela lancera l'application avec un serveur de production.
 
