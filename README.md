@@ -19,13 +19,13 @@ Le projet est organisé selon une architecture MVC (Modèle-Vue-Contrôleur) qui
 
 Pour lancer l'application en mode développement, exécutez la commande suivante:
 
-(```npm run dev```)bash
+```bash npm run dev```
 
 Cela lancera l'application avec un serveur de développement qui rechargera automatiquement le code à chaque modification.
 
 Pour lancer l'application en mode production, exécutez la commande suivante:
 
-(```npm run start```)bash
+```bash npm run start```
 
 Cela lancera l'application avec un serveur de production.
 
@@ -33,8 +33,8 @@ Cela lancera l'application avec un serveur de production.
 
 Pour configurer les variables d'environnement, créez un fichier `.env` à la racine du projet et spécifiez les valeurs des variables nécessaires, par exemple:
 
-```PORT=3000```
-```MONGODB_URI=mongodb://localhost:27017/my-database```
+```bash PORT=3000```
+```bash MONGODB_URI=mongodb://localhost:27017/my-database```
 
 Cela permettra à l'application d'accéder aux valeurs de ces variables lors du lancement.
 
