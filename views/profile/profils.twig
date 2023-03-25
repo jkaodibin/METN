@@ -1,0 +1,65 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="profileSidbarContainer">
+          <div class="card border border-info border-opacity-25 profileSidbar text-center p-3">
+            <img class="img-fluid shadow pdp rounded-circle" src="./images/users/avatar.jpg" alt="Pdp">
+            <h4>Anarana lavalava kwely</h4>
+            <div class="text-start p-2 m-1">
+              <h5 class="underline">A propos</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="card border border-info border-opacity-25 m-2 jobInProfile p-4"> 
+          <div class="poster container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid rounded-circle" style="height: 40px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                <span class="posterName">Name Of The Poster</span>
+              </div>
+              <div class="col-lg-6 text-right">
+                <h3 class="pt-2">Titre du Job</h3>
+              </div>
+              <div class="text-muted ms-lg-4 font-size-13"><span class="underline">Budget</span>: 1 000 000 ar - 2 000 000 ar</div>
+            </div>
+            <hr>
+            <h4>Description</h4>
+            <p class="ps-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maiores.
+            </p> 
+            <span class="text-muted p-5 italic font-size-12">Posted on 25 mar 2023</span>
+            <hr>
+            <div class="commentContainer rounded border border-light p-2">
+              <div class="prestataire p-2 m-2 rounded ">
+                <img class="img-fluid rounded-circle" style="height: 20px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                <span class="prestataireName font-size-14">Name Of The Poster</span>
+                <div class="comment ps-4">
+                  <form action="">
+                    <input type="text" name="" class="form-control w-75 d-inline-block" id="">
+                    <button type="button" class="btn d-inline-block btn-outline-dark btn-sm"><i class="fas fa-paper-plane pe-2"></i> Postuler</button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="prestataire p-2 m-2 rounded ">
+                <img class="img-fluid rounded-circle" style="height: 20px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                <span class="prestataireName font-size-14">Name Of The Poster</span>
+                <div class="comment ps-4">
+                  Lorem lavalava kwely fa za lo zw tsosy ambara. je le ferais pour 400 00 ar.
+                </div>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
