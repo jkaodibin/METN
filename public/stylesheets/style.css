@@ -1,8 +1,10 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+    transition: all .4s ease !important;
+    box-sizing: border-box;
 }
-
-a {
-  color: #00B7FF;
+body{
+    /* margin-top: 100px; */
+}
+.barDeNavigation{
+    backdrop-filter: blur(5px);
 }
