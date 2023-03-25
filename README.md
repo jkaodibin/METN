@@ -1,32 +1,41 @@
-# METN
+# HIU_2k23 SEAL-TEAM E-media
 
-![TEAM_LOGO](/public/images/logo.png)
+Ce projet utilise `Express.js` comme framework backend et Twig comme moteur de templates pour le frontend.
 
-Mahakasika ity Projet METN ity : Mampiasa `MongoDB,Express,Twig,NodeJs`.
+Il fournit deux commandes npm pour la mise en service: `npm run dev` pour le mode développement et `npm start` pour le mode production. Les variables d'environnement suivantes sont utilisées:
 
-Manao `` git clone https://github.com/jkaodibin/METN.git`` , avy eo miditra ao amin'ny ilay `dossier`.
+1. `PORT`: définit le port sur lequel le serveur web doit écouter. 
 
-# Install
+2. `MONGODB_URI`: spécifie l'URL de la base de données MongoDB à utiliser.
 
-Voalohany indrindra ataovy ny installation an'ny ilay projet.
+### Structure du projet
 
-`` npm i ``
+Le projet est organisé selon une architecture MVC (Modèle-Vue-Contrôleur) qui permet de séparer les préoccupations en termes de responsabilités et de faciliter la maintenance et l'extension du code.
 
-# Run 
+1. Le dossier `src/router` contient les fichiers qui définissent les routes et les fonctions de rendu des templates.
+2. Le dossier `src/api` contient les contrôleurs qui définissent les fonctions de l'API pour les endpoints de l'application.
 
-Avy eo lancer'nao ilay server 
+### Lancement de l'application
 
-`` npm run dev `` (raha en mode `Developpement`)
-`` npm run start `` (raha en mode `Production` )
+Pour lancer l'application en mode développement, exécutez la commande suivante:
 
-# Config 
+(```npm run dev```)bash
 
-Misy fichier cacher iza ao, ``.env`` io no anaran'ny ilay fichier.
-Afaka manova ny PORT ao ianao, Port par defaut ao 3000 fa afaka ovainao koa.
+Cela lancera l'application avec un serveur de développement qui rechargera automatiquement le code à chaque modification.
 
-# Url For Navigator (GET)
+Pour lancer l'application en mode production, exécutez la commande suivante:
 
-Raha hanao `Integration` dia ireto ny URL efa misy ao.
+(```npm run start```)bash
 
-1. `http://localhost:3000/` (raha tsy nanova port tao amin'ny ``.env`` enao)
-2. `http://localhost:3000/login` (raha tsy nanova port tao amin'ny ``.env`` enao)
+Cela lancera l'application avec un serveur de production.
+
+### Configuration de l'environnement 
+
+Pour configurer les variables d'environnement, créez un fichier `.env` à la racine du projet et spécifiez les valeurs des variables nécessaires, par exemple:
+
+```PORT=3000```
+```MONGODB_URI=mongodb://localhost:27017/my-database```
+
+Cela permettra à l'application d'accéder aux valeurs de ces variables lors du lancement.
+
+### Routes
