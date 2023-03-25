@@ -1,4 +1,37 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
+  <header class="header">
+    <div class="header_image">
+      <img src="/images/products/fond.jpg" alt="">    
+    </div> 
+    <div class="header_contenu">
+      <h1>Titre</h1>
+      <p>Description</p>
+    </div>
+    <div class="header_contenu-input">
+      <div class="header_contenu-input--search col-lg-8 mx-auto">
+          <input class="input-grey-rounded" type="select" placeholder="Search">
+          <input class="input-grey-rounded" type="text" placeholder="Search">
+          <input class="btn btn-blue" type="submit" placeholder="Search">
+      </div>
+    </div>
+  </header>
+  <section class="offres container">
+    <div class="row">
+      <div class="col-md-6 offres_locale">
+        offres locale
+      </div>
+      <div class="col-md-6">
+        offre freelance home work
+      </div>
+    </div>
+  </section>
+  <section class="pub_airtel">
+    <div class="pub-slider">
+      <div class="slider-image">
+        <img src="" alt="">
+      </div>
+    </div>
+  </section>
 {% endblock %}

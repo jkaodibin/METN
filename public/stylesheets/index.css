@@ -1,0 +1,85 @@
+.header ::after {
+    background-image: url(/images/);
+}
+.header_image {
+    position: relative;
+    background-color: black;
+}
+.header_image img {
+    width: 100%;
+    height: 10%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.header_contenu {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.header_contenu h1 {
+    font-size: 5rem;
+}
+.header_contenu p {
+    font-size: 2.4rem;
+}
+.header_contenu h1,
+.header_contenu p {
+    color: white;
+}
+.header_contenu-input {
+    position: relative;
+}
+.header_contenu-input--search {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 30px;
+}
+.input-grey-rounded:not(:last-child) {
+    margin-right: 20px;
+}
+.input-grey-rounded {
+font-size: 16px;
+line-height: 1.5;
+background: #E9EEF0;
+background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><path fill='%238C92A0' d='M11.44 10.73l4.41 4.42a.5.5 0 1 1-.7.7l-4.42-4.41a6.5 6.5 0 1 1 .7-.7v-.01zM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z'></path></svg>");
+background-repeat: no-repeat;
+background-position: 15px 10px;
+background-size: 20px 20px;
+border-radius: 100px;
+width: 300px;
+padding: .5em 1em .5em 2.5em;
+border: 5px solid var(--blue);
+} 
+.btn-blue {
+    border: solid 4px var(--blue)!important;
+    color: white !important;
+}
+.btn-blue:hover {
+    border: solid 4px var(--blue)!important;
+    color: white !important;
+    background-color: var(--blue);
+}
+.input-grey-rounded::placeholder{
+    color: #838D99;
+}
+
+.input-grey-rounded:focus {
+    outline: none;
+    background-color: #FFF;
+    border: 5px solid var(--blue);
+} 
+
+/* contenu offre */ 
+.offres_locale {
+    background-color: var(--white);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
