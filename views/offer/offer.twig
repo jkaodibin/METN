@@ -1,0 +1,149 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+  <div class="container-fluid" style="margin-top: 80px;">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="profileSidbarContainer">
+          <div class="card border border-info border-opacity-25 profileSidbar text-right p-4">
+            <div class="card-header">
+              <h3>Chercher un Job</h3>
+            </div>
+            <form action="">
+              <label class="bold" for="categorie">Domaine</label>
+              <select id="categorie" name="categorie[]" class="select2-categorie">
+                  <option value="Wonosari">Wonosari</option>
+                  <option value="Antipolo">Antipolo</option>
+                  <option value="Lesuhe">Lesuhe</option>
+                  <option selected value="Sunzhuang">Sunzhuang</option>
+                  <option value="Hongchuan">Hongchuan</option>
+                  <option value="France">France</option>
+                  <option selected value="Brazil">Brazil</option>
+                  <option selected value="Yemen">Yemen</option>
+                  <option selected value="United States">United States</option>
+                  <option value="China">China</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Bulgaria">Bulgaria</option>
+              </select>
+
+
+              <label for="lieu">Lieu</label>
+              <select id="lieu" name="lieu[]" class="select2-lieu">
+                  <option value="Wonosari">Wonosari</option>
+                  <option value="Antipolo">Antipolo</option>
+                  <option value="Lesuhe">Lesuhe</option>
+                  <option selected value="Sunzhuang">Sunzhuang</option>
+                  <option value="Hongchuan">Hongchuan</option>
+                  <option value="France">France</option>
+                  <option selected value="Brazil">Brazil</option>
+                  <option selected value="Yemen">Yemen</option>
+                  <option selected value="United States">United States</option>
+                  <option value="China">China</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Bulgaria">Bulgaria</option>
+              </select>
+
+
+              <label for="type">Type de travail</label>
+              <select id="type" name="type[]" class="select2-type">
+                  <option value="Wonosari">Wonosari</option>
+                  <option value="Antipolo">Antipolo</option>
+                  <option value="Lesuhe">Lesuhe</option>
+              </select>
+
+              <h5 class="bold mt-3">Experience</h5>
+              <div class="ps-4 ">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Senior
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Junior
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Debutant
+                  </label>
+                </div>
+              </div>  
+
+              
+              <h5 class="bold mt-3">Renumeration</h5>
+              <input type="text" id="rangeSliderPrix">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+
+        <div class="card border border-info border-opacity-25 m-2 jobInProfile p-4"> 
+          <div class="poster container">
+            <h3 class="pt-2">Titre du Job</h3>
+            
+                <img class="img-fluid rounded-circle" style="height: 30px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                <span class="posterName">Name Of The Poster | <btn class="text-success cursor-pointer"><i class="fas ps-3 fa-comments"></i> Chat</btn></span>
+              
+              
+              <div class="text-muted ms-lg-4 font-size-13"><span class="underline">Budget</span>: 1 000 000 ar - 2 000 000 ar</div>
+              <div class="ms-lg-4 font-size-13"><span class="rounded ms-1  ps-1 pe-1 bg-info">Developpement web </span><span class="rounded ms-1  ps-1 pe-1  bg-light">Antananarivo</span><span class=" ms-1 ps-1 pe-1 rounded bg-danger">Remote</span></div>
+            
+            <hr>
+            <span class="text-muted text-right p-5 italic font-size-12">Posted on 25 mar 2023</span>
+            <button class="btn ms-4 btn-sm btn-dark"><i class="fas me-2 fa-eye"></i> Voir les detail </button>
+            <hr>
+
+          </div>
+        </div>
+
+        
+      </div>
+      <div class="col-lg-5">
+        <div class="card border position-fixed border-info border-opacity-25 m-2 jobDetails p-4"> 
+          <div class="poster container">
+            <h3 class="pt-2 d-inline">Titre du Job</h3> <a href="#newComent" class="btn float-end bg-success-bright text-success">Postuler</a>
+              
+               <div>
+                <img class="img-fluid rounded-circle" style="height: 40px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                <span class="posterName">Name Of The Poster | <btn class="text-success cursor-pointer"><i class="fas ps-3 fa-comments"></i> Chat</btn></span>
+              
+               </div>
+          
+              <div class="text-muted ms-lg-4 font-size-13"><span class="underline">Budget</span>: 1 000 000 ar - 2 000 000 ar</div>
+              <div class="ms-lg-4 font-size-13"><span class="rounded ms-1  ps-1 pe-1 bg-info">Developpement web </span><span class="rounded ms-1  ps-1 pe-1  bg-light">Antananarivo</span><span class=" ms-1 ps-1 pe-1 rounded bg-danger">Remote</span></div>
+            </div>
+            <hr>
+            <div class="rounded border border-light p-3" style="overflow-y: scroll;height:55vh">
+              <h4>Description</h4>
+              <p class="ps-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maioresLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maiores.
+              </p> 
+              <span class="text-muted text-right p-5 italic font-size-12">Posted on 25 mar 2023</span>
+              <hr>
+              <div class="commentContainer rounded border border-light p-2">
+                <div class="prestataire p-2 m-2 rounded ">
+                  <img class="img-fluid rounded-circle" style="height: 20px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                  <span class="prestataireName font-size-14">Name Of The Poster</span>
+                  <div class="comment ps-4">
+                    <form action="" autocomplete="off" id="formComent">
+                      <input type="text" name="newComent" autoComplete="off" class="form-control w-75 d-inline-block" id="newComent" placeholder="Pourqoui vous ?">
+                      <button type="button" class="btn ms-lg-3 d-inline-block btn-outline-dark btn-sm"><i class="fas fa-paper-plane pe-2"></i> <span class="hideInSm"></span></button>
+                    </form>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+{% endblock %}

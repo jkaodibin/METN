@@ -9,6 +9,7 @@ const logger = require('morgan');
 let indexRouter = require('./src/routes/index');
 let profilsRouter = require('./src/routes/profils');
 let dashboardRouter = require('./src/routes/dashboard');
+let offreRouter = require('./src/routes/offres');
 
 const app = express();
 
@@ -25,7 +26,8 @@ app.use(cors());
 
 app.use('/', indexRouter);
 app.use('/profils', profilsRouter);
-app.use('/dashboard', dashboardRouter);
+app.use('/myAccount', dashboardRouter);
+app.use('/offres', offreRouter);
 
 
 
