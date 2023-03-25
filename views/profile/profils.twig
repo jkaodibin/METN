@@ -1,26 +1,41 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
-  <div class="container-fluid">
+  <div class="container-fluid" style="margin-top: 100px;">
     <div class="row">
       <div class="col-lg-3">
         <div class="profileSidbarContainer">
-          <div class="card border border-info border-opacity-25 profileSidbar text-center p-3">
+          <div class="card border border-info border-opacity-25 profileSidbar text-center p-2">
             <img class="img-fluid shadow pdp rounded-circle" src="./images/users/avatar.jpg" alt="Pdp">
-            <h4>Anarana lavalava kwely</h4>
+            <h3 class="mt-2">Anarana lavalava kwely</h3>
             <div class="text-start p-2 m-1">
               <h5 class="underline">A propos</h5>
+              <p class="italic ps-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam ut nisi non assumenda maiores perspiciatis fuga asperiores
+              </p>
+              <span class="bold">Contact :</span> +261 33 08 238 89
             </div>
+            <div class="d-flex m-auto justify-content-between align-items-center">
+              Votes : &nbsp;
+              <div class="ratings">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star"></i>
+              </div>
+          </div>
           </div>
         </div>
       </div>
       <div class="col-lg-9">
+
         <div class="card border border-info border-opacity-25 m-2 jobInProfile p-4"> 
           <div class="poster container">
             <div class="row">
               <div class="col-lg-6">
                 <img class="img-fluid rounded-circle" style="height: 40px;" src="./images/users/avatar.jpg" alt="Pdp" >
-                <span class="posterName">Name Of The Poster</span>
+                <span class="posterName">Name Of The Poster | <btn class="text-success cursor-pointer"><i class="fas ps-3 fa-comments"></i> Chat</btn></span>
               </div>
               <div class="col-lg-6 text-right">
                 <h3 class="pt-2">Titre du Job</h3>
@@ -32,25 +47,157 @@
             <p class="ps-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maiores.
             </p> 
-            <span class="text-muted p-5 italic font-size-12">Posted on 25 mar 2023</span>
+            <span class="text-muted text-right p-5 italic font-size-12">Posted on 25 mar 2023</span>
             <hr>
             <div class="commentContainer rounded border border-light p-2">
               <div class="prestataire p-2 m-2 rounded ">
                 <img class="img-fluid rounded-circle" style="height: 20px;" src="./images/users/avatar.jpg" alt="Pdp" >
-                <span class="prestataireName font-size-14">Name Of The Poster</span>
+                <span class="prestataireName font-size-14">Name Of The Poster | <btn class="cursor-pointer text-success" ><i class="fas ps-1 fa-comments"></i> Chat</btn></span>
                 <div class="comment ps-4">
-                  <form action="">
-                    <input type="text" name="" class="form-control w-75 d-inline-block" id="">
-                    <button type="button" class="btn d-inline-block btn-outline-dark btn-sm"><i class="fas fa-paper-plane pe-2"></i> Postuler</button>
+                  <form action="" autocomplete="off" id="formComent">
+                    <input type="text" name="newComent" autoComplete="off" class="form-control w-75 d-inline-block" id="newComent">
+                    <button type="button" class="btn ms-lg-3 d-inline-block btn-outline-dark btn-sm"><i class="fas fa-paper-plane pe-2"></i> <span class="hideInSm">Postuler</span></button>
                   </form>
                 </div>
               </div>
 
               <div class="prestataire p-2 m-2 rounded ">
                 <img class="img-fluid rounded-circle" style="height: 20px;" src="./images/users/avatar.jpg" alt="Pdp" >
-                <span class="prestataireName font-size-14">Name Of The Poster</span>
+                <span class="prestataireName font-size-14">Name Of The Poster | <btn class="cursor-pointer text-success"><i class="fas ps-1 fa-comments"></i> Chat</btn></span>
                 <div class="comment ps-4">
-                  Lorem lavalava kwely fa za lo zw tsosy ambara. je le ferais pour 400 00 ar.
+                  Lorem lavalava kwely fa za lo zw tsosy ambara. je le ferais pour 400 000 ar.
+                </div>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+        <div class="card border border-info border-opacity-25 m-2 jobInProfile p-4"> 
+          <div class="poster container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid rounded-circle" style="height: 40px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                <span class="posterName">Name Of The Poster | <btn class="text-success cursor-pointer"><i class="fas ps-3 fa-comments"></i> Chat</btn></span>
+              </div>
+              <div class="col-lg-6 text-right">
+                <h3 class="pt-2">Titre du Job</h3>
+              </div>
+              <div class="text-muted ms-lg-4 font-size-13"><span class="underline">Budget</span>: 1 000 000 ar - 2 000 000 ar</div>
+            </div>
+            <hr>
+            <h4>Description</h4>
+            <p class="ps-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maiores.
+            </p> 
+            <span class="text-muted text-right p-5 italic font-size-12">Posted on 25 mar 2023</span>
+            <hr>
+            <div class="commentContainer rounded border border-light p-2">
+              <div class="prestataire p-2 m-2 rounded ">
+                <img class="img-fluid rounded-circle" style="height: 20px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                <span class="prestataireName font-size-14">Name Of The Poster | <btn class="cursor-pointer text-success" ><i class="fas ps-1 fa-comments"></i> Chat</btn></span>
+                <div class="comment ps-4">
+                  <form action="" autocomplete="off" id="formComent">
+                    <input type="text" name="newComent" autoComplete="off" class="form-control w-75 d-inline-block" id="newComent">
+                    <button type="button" class="btn ms-lg-3 d-inline-block btn-outline-dark btn-sm"><i class="fas fa-paper-plane pe-2"></i> <span class="hideInSm">Postuler</span></button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="prestataire p-2 m-2 rounded ">
+                <img class="img-fluid rounded-circle" style="height: 20px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                <span class="prestataireName font-size-14">Name Of The Poster | <btn class="cursor-pointer text-success"><i class="fas ps-1 fa-comments"></i> Chat</btn></span>
+                <div class="comment ps-4">
+                  Lorem lavalava kwely fa za lo zw tsosy ambara. je le ferais pour 400 000 ar.
+                </div>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+        <div class="card border border-info border-opacity-25 m-2 jobInProfile p-4"> 
+          <div class="poster container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid rounded-circle" style="height: 40px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                <span class="posterName">Name Of The Poster | <btn class="text-success cursor-pointer"><i class="fas ps-3 fa-comments"></i> Chat</btn></span>
+              </div>
+              <div class="col-lg-6 text-right">
+                <h3 class="pt-2">Titre du Job</h3>
+              </div>
+              <div class="text-muted ms-lg-4 font-size-13"><span class="underline">Budget</span>: 1 000 000 ar - 2 000 000 ar</div>
+            </div>
+            <hr>
+            <h4>Description</h4>
+            <p class="ps-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maiores.
+            </p> 
+            <span class="text-muted text-right p-5 italic font-size-12">Posted on 25 mar 2023</span>
+            <hr>
+            <div class="commentContainer rounded border border-light p-2">
+              <div class="prestataire p-2 m-2 rounded ">
+                <img class="img-fluid rounded-circle" style="height: 20px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                <span class="prestataireName font-size-14">Name Of The Poster | <btn class="cursor-pointer text-success" ><i class="fas ps-1 fa-comments"></i> Chat</btn></span>
+                <div class="comment ps-4">
+                  <form action="" autocomplete="off" id="formComent">
+                    <input type="text" name="newComent" autoComplete="off" class="form-control w-75 d-inline-block" id="newComent">
+                    <button type="button" class="btn ms-lg-3 d-inline-block btn-outline-dark btn-sm"><i class="fas fa-paper-plane pe-2"></i> <span class="hideInSm">Postuler</span></button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="prestataire p-2 m-2 rounded ">
+                <img class="img-fluid rounded-circle" style="height: 20px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                <span class="prestataireName font-size-14">Name Of The Poster | <btn class="cursor-pointer text-success"><i class="fas ps-1 fa-comments"></i> Chat</btn></span>
+                <div class="comment ps-4">
+                  Lorem lavalava kwely fa za lo zw tsosy ambara. je le ferais pour 400 000 ar.
+                </div>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+        <div class="card border border-info border-opacity-25 m-2 jobInProfile p-4"> 
+          <div class="poster container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid rounded-circle" style="height: 40px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                <span class="posterName">Name Of The Poster | <btn class="text-success cursor-pointer"><i class="fas ps-3 fa-comments"></i> Chat</btn></span>
+              </div>
+              <div class="col-lg-6 text-right">
+                <h3 class="pt-2">Titre du Job</h3>
+              </div>
+              <div class="text-muted ms-lg-4 font-size-13"><span class="underline">Budget</span>: 1 000 000 ar - 2 000 000 ar</div>
+            </div>
+            <hr>
+            <h4>Description</h4>
+            <p class="ps-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse doloribus dolorem. Expedita eligendi aliquam qui molestias possimus, nesciunt in, voluptate similique sint facilis, doloremque maxime sunt? Doloremque, quam maiores.
+            </p> 
+            <span class="text-muted text-right p-5 italic font-size-12">Posted on 25 mar 2023</span>
+            <hr>
+            <div class="commentContainer rounded border border-light p-2">
+              <div class="prestataire p-2 m-2 rounded ">
+                <img class="img-fluid rounded-circle" style="height: 20px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                <span class="prestataireName font-size-14">Name Of The Poster | <btn class="cursor-pointer text-success" ><i class="fas ps-1 fa-comments"></i> Chat</btn></span>
+                <div class="comment ps-4">
+                  <form action="" autocomplete="off" id="formComent">
+                    <input type="text" name="newComent" autoComplete="off" class="form-control w-75 d-inline-block" id="newComent">
+                    <button type="button" class="btn ms-lg-3 d-inline-block btn-outline-dark btn-sm"><i class="fas fa-paper-plane pe-2"></i> <span class="hideInSm">Postuler</span></button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="prestataire p-2 m-2 rounded ">
+                <img class="img-fluid rounded-circle" style="height: 20px;" src="./images/users/avatar.jpg" alt="Pdp" >
+                <span class="prestataireName font-size-14">Name Of The Poster | <btn class="cursor-pointer text-success"><i class="fas ps-1 fa-comments"></i> Chat</btn></span>
+                <div class="comment ps-4">
+                  Lorem lavalava kwely fa za lo zw tsosy ambara. je le ferais pour 400 000 ar.
                 </div>
               </div>
               
