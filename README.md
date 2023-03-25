@@ -33,10 +33,10 @@ Cela lancera l'application avec un serveur de production.
 
 Pour configurer les variables d'environnement, créez un fichier `.env` à la racine du projet et spécifiez les valeurs des variables nécessaires, par exemple:
 
-`````bash 
+```bash
 PORT=3000
 MONGODB_URI=mongodb://localhost:27017/my-database
-`````
+```
 
 Cela permettra à l'application d'accéder aux valeurs de ces variables lors du lancement.
 
