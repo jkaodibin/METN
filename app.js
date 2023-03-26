@@ -4,13 +4,18 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const logger = require('morgan');
-// require('./config/db');
+require('./config/db');
 
 let indexRouter = require('./src/routes/index');
 let profilsRouter = require('./src/routes/profils');
 let dashboardRouter = require('./src/routes/dashboard');
 let offreRouter = require('./src/routes/offres');
 let inscriptionRouter = require('./src/routes/inscription');
+
+// METHODE DE PAYEMENT AIRTEL_MONEY
+let payement = require('./airtel_api/payement');
+let refund = require('./airtel_api/refund');
+let txn_unquiry = require('./airtel_api/txn_unquiry');
 
 const app = express();
 
@@ -23,6 +28,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/plugins/',express.static(__dirname + '/node_modules/'));
 app.use(cors());
 
 app.use('/', indexRouter);
@@ -30,6 +36,11 @@ app.use('/profils', profilsRouter);
 app.use('/myAccount', dashboardRouter);
 app.use('/offres', offreRouter);
 app.use('/inscription', inscriptionRouter);
+
+
+app.use('/api/payement', payement);
+app.use('/api/refund', refund);
+app.use('/api/txn_unquiry', txn_unquiry);
 
 
 
