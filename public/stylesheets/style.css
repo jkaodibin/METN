@@ -1,10 +1,21 @@
-* {
+*:not(ul) {
     transition: all .4s ease !important;
     box-sizing: border-box;
+    -webkit-transition: all .4s ease !important;
+    -moz-transition: all .4s ease !important;
+    -ms-transition: all .4s ease !important;
+    -o-transition: all .4s ease !important;
 }
-    background: rgb(164, 194, 207);
+.headerVid{
+    min-width: 100%;
+    min-height: 100%;
 }
-
+.vag1{
+    position: absolute;
+    z-index: 200;
+    bottom: -100px;
+    width: 100%;
+}
 .card{
     backdrop-filter: blur(2px);
     background: #ffffffe8;
@@ -31,13 +42,18 @@
     .profileSidbarContainer{
         position: fixed;
         width: 24vw;
+        top: 90px;
     }
 }
 #tablePub tbody tr:hover {
     background: rgba(195, 255, 255, 0.384);
 }
 
-
+.profilBtnNav:hover{
+    cursor: pointer;
+    background-color: #ffffff33; 
+    box-shadow: 0 0 5px rgb(255, 255, 255) inset;
+}
 .profileSidbar {
     height: 80vh;
     width: 100%;
@@ -48,9 +64,9 @@
     height: 170px;
     margin: 10px auto;
 }
-.prestataire{
-    background-color: rgb(247, 251, 255);
-}
+.prestataire {
+    background-color: rgb(220, 233, 247);
+  }
 .chatContainer{
     z-index: 10000;
     position: fixed;
