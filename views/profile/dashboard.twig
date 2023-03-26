@@ -1,0 +1,206 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+  <div class="container-fluid" style="margin-top: 100px;">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="profileSidbarContainer">
+          <div class="card border border-info border-opacity-25 profileSidbar text-center p-2">
+            <a href="" class="link-warning"><i class="fas pe-2 fa-pen"></i>Modifier Profile</a>
+            <img class="img-fluid shadow pdp rounded-circle" src="./images/users/avatar.jpg" alt="Pdp">
+            <h3 class="mt-2">Anarana lavalava kwely</h3>
+            <div class="text-start p-2 m-1">
+              <h5 class="underline">A propos</h5>
+              <p class="italic ps-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam ut nisi non assumenda maiores perspiciatis fuga asperiores
+              </p>
+              <span class="bold">Contact :</span> +261 33 08 238 89
+            </div>
+            <div class="d-flex m-auto justify-content-between align-items-center">
+              Votes : &nbsp;
+              <div class="ratings">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card p-3">
+                <h4>Job postule : 23</h4>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card p-3">
+                <h4>Job en cours : 2</h4>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card p-3">
+                <h4>Balance : 2 450 000 MGA</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card border border-info border-opacity-25 m-2  p-4"> 
+          <h3>Job prises</h3>
+          <table id="tablePostule" class="table m-auto text-center">
+            <thead>
+              <tr>
+                <th>Job</th>
+                <th>Statut</th>
+                <th>Deadline</th>
+                <th>Renumeration</th>
+                <th>Chat</th>
+                <th>Vote recu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Job 1 lava beeeeeeeeee</td>
+                <td><span class="rounded bg-warning-bright p-1 text-warning">En cours</span></td>
+                <td>26 mars 2023</td>
+                <td>800 000 MGA</td>
+                <td><btn class="text-success cursor-pointer"><i class="fas fa-comments"></i> Chat</btn></td>
+                <td>
+                  <div class="d-flex m-auto justify-content-center align-items-center">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Job 1 lava beeeeeeeeee</td>
+                <td><span class="rounded bg-warning-bright p-1 text-warning">En cours</span></td>
+                <td>26 mars 2023</td>
+                <td>800 000 MGA</td>
+                <td><btn class="text-success cursor-pointer"><i class="fas fa-comments"></i> Chat</btn></td>
+                <td>
+                  <div class="d-flex m-auto justify-content-center align-items-center">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Job 1 lava beeeeeeeeee</td>
+                <td><span class="rounded bg-warning-bright p-1 text-warning">En cours</span></td>
+                <td>26 mars 2023</td>
+                <td>800 000 MGA</td>
+                <td><btn class="text-success cursor-pointer"><i class="fas fa-comments"></i> Chat</btn></td>
+                <td>
+                  <div class="d-flex m-auto justify-content-center align-items-center">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Job 1 lava beeeeeeeeee</td>
+                <td><span class="rounded bg-warning-bright p-1 text-warning">En cours</span></td>
+                <td>26 mars 2023</td>
+                <td>800 000 MGA</td>
+                <td><btn class="text-success cursor-pointer"><i class="fas fa-comments"></i> Chat</btn></td>
+                <td>
+                  <div class="d-flex m-auto justify-content-center align-items-center">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr>
+        <div class="card border border-info border-opacity-25 m-2  p-4"> 
+          <h3>Job publie</h3>
+          <table id="tablePub" class="table  m-auto text-center">
+            <thead>
+              <tr>
+                <th>Job</th>
+                <th>Statut</th>
+                <th>Fin recrutement</th>
+                <th>Deadline</th>
+                <th>Budget</th>
+                <th>Nb.prest</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="cursor-pointer">
+                <td>Job 1 lava beeeeeeeeee</td>
+                <td><span class="rounded bg-warning-bright p-1 text-warning">Recrutement</span></td>
+                <td>26 mars 2023</td>
+                <td>30 mars 2023</td>
+                <td>800 000 MGA - 1 000 000 MGA</td>
+                <td>32</td>
+              </tr>
+              <tr class="cursor-pointer">
+                <td>Job 1 lava beeeeeeeeee</td>
+                <td><span class="rounded bg-warning-bright p-1 text-warning">Recrutement</span></td>
+                <td>26 mars 2023</td>
+                <td>30 mars 2023</td>
+                <td>800 000 MGA - 1 000 000 MGA</td>
+                <td>32</td>
+              </tr>
+              <tr class="cursor-pointer">
+                <td>Job 1 lava beeeeeeeeee</td>
+                <td><span class="rounded bg-warning-bright p-1 text-warning">Recrutement</span></td>
+                <td>26 mars 2023</td>
+                <td>30 mars 2023</td>
+                <td>800 000 MGA - 1 000 000 MGA</td>
+                <td>32</td>
+              </tr>
+              <tr class="cursor-pointer">
+                <td>Job 1 lava beeeeeeeeee</td>
+                <td><span class="rounded bg-warning-bright p-1 text-warning">Recrutement</span></td>
+                <td>26 mars 2023</td>
+                <td>30 mars 2023</td>
+                <td>800 000 MGA - 1 000 000 MGA</td>
+                <td>32</td>
+              </tr>
+              <tr class="cursor-pointer">
+                <td>Job 1 lava beeeeeeeeee</td>
+                <td><span class="rounded bg-warning-bright p-1 text-warning">Recrutement</span></td>
+                <td>26 mars 2023</td>
+                <td>30 mars 2023</td>
+                <td>800 000 MGA - 1 000 000 MGA</td>
+                <td>32</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+{% endblock %}

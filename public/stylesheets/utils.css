@@ -1,0 +1,37 @@
+/* variable couleur */
+:root{
+    --white: #f8fafb ;
+    --black: #0000 ;
+    --blue: #0000a5 ;
+}
+.cover {
+    overflow: hidden;
+}
+.cover img {
+    object-fit: cover;
+    font-family: 'object-fit: cover';
+    height: 100%;
+    width: 100%;
+    border: 0;
+    vertical-align: bottom;
+    max-width: 100%;
+}
+.btn-blue {
+    border: solid 4px var(--blue)!important;
+    color: white !important;
+}
+.btn-blue:hover {
+    border: solid 4px var(--blue)!important;
+    color: white !important;
+    background-color: var(--blue);
+}
+.btn-offre {
+    background-color: var(--white);
+    color:#11111a;
+}
+.btn-offre:hover {
+    background-color: var(--white);
+    color:#11111a;
+    transform: scale(1.1);
+    transition: scale 0.2s ease-in-out;
+}

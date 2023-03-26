@@ -2,9 +2,130 @@
     transition: all .4s ease !important;
     box-sizing: border-box;
 }
-body{
-    /* margin-top: 100px; */
+    background: rgb(164, 194, 207);
+}
+
+.card{
+    backdrop-filter: blur(2px);
+    background: #ffffffe8;
 }
 .barDeNavigation{
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 40px -10px rgba(0, 255, 255, 0.26);
+    background: #ffffffc4;
+}
+.bold{
+    font-weight: bold !important;
+}
+.bg-light-bright{
+    background: #dbdada;
+}
+.italic{
+    font-style: italic !important;
+}
+.underline{
+    text-decoration: underline !important;
+}
+
+@media screen and (min-width : 992px) {
+    .profileSidbarContainer{
+        position: fixed;
+        width: 24vw;
+    }
+}
+#tablePub tbody tr:hover {
+    background: rgba(195, 255, 255, 0.384);
+}
+
+
+.profileSidbar {
+    height: 80vh;
+    width: 100%;
+}
+.profileSidbar .pdp{
+    border: solid 10px white;
+    width: 170px;
+    height: 170px;
+    margin: 10px auto;
+}
+.prestataire{
+    background-color: rgb(247, 251, 255);
+}
+.chatContainer{
+    z-index: 10000;
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+    width: 300px;
+    height: 425px;
+}
+.fa-x:hover{
+    text-shadow: 0 0 2px rgba(99, 99, 99, 0.63);
+    transform: scale(-0.01);
+    -webkit-transform: scale(-0.01);
+    -moz-transform: scale(-0.01);
+    -ms-transform: scale(-0.01);
+    -o-transform: scale(-0.01);
+}
+.messagebody{
+    height: 300px;
+    overflow-y: scroll;
+}
+.msgContainer{
+    margin-top: 10px;
+}
+.msgContainer .userImg.sender{
+    left: -24px;
+    width: 20px;
+    height: 20px;
+}
+.msgContainer .userImg.receiver{
+    right: -24px;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.hide{
+    display: none !important;
+}
+.ratings{
+    margin-right:10px;
+}
+
+.ratings i{
+    
+    color:#cecece;
+    font-size:32px;
+}
+
+.rating-color{
+    color:#fbc634 !important;
+}
+
+.review-count{
+    font-weight:400;
+    margin-bottom:2px;
+    font-size:24px !important;
+}
+
+.small-ratings i{
+  color:#cecece;   
+}
+
+.review-stat{
+    font-weight:300;
+    font-size:18px;
+    margin-bottom:2px;
+}
+@media screen and (max-width: 600px) {
+    .hideInSm{
+        display:none;
+    }
+    .chatContainer{
+        width: 80vw;
+        height: 80vh;
+    }
 }
