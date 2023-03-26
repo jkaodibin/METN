@@ -5,21 +5,20 @@ const getToken = require("./getToken");
 const PAYMENT_URL = "https://openapiuat.airtel.africa/merchant/v1/payments/";
 
 router.post("/", async (req, res) => {
-  let { reference, country, currency, msisdn, amount, id } = req.body;
-
+  let { reference, subscriber, transaction} = req.body;
   try {
     const data = {
       reference,
       subscriber: {
-        country,
-        currency,
-        msisdn,
+        country: subscriber.country,
+        currency: subscriber.currency,
+        msisdn: subscriber.msisdn,
       },
       transaction: {
-        amount,
-        country,
-        currency,
-        id,
+        amount: transaction.amount,
+        country: transaction.country,
+        currency: transaction.currency,
+        id: transaction.id,
       },
     };
 
@@ -27,11 +26,11 @@ router.post("/", async (req, res) => {
       const headers = {
         "Content-Type": "application/json",
         Accept: "*/*",
-        "X-Country": country,
-        "X-Currency": currency,
+        "X-Country": transaction.country,
+        "X-Currency": transaction.currency,
         Authorization: `Bearer ${accessToken}`,
       };
-
+      console.log(headers);
       axios
         .post(PAYMENT_URL, data, { headers })
         .then((response) => {
