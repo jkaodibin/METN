@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const bidController = require('../../controllers/bid.controller');
 const {requireAuth} = require('../../middleware/auth.middleware');
-const {checkBidIsMine} = require('../../middleware/BidMiddleware');
+const {checkBidIsMine} = require('../../middleware/bidMiddleware');
 const multer = require("multer");
 const upload = multer();
 
