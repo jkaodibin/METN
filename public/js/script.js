@@ -70,12 +70,7 @@ ScrollTrigger.defaults({
 
 $('.chat').on('click' ,function () {
     $('.chatContainer').removeClass('hide')
-    $('.chatContainer .messagebody').html('
-    <div class="msgContainer position-relative">
-        <div class="msg rounded d-inline-block bg-info-bright p-2">
-                </div>
-        </div>
-        ')
+    $('.chatContainer .messagebody').html('')
     let userId = $(this).attr('data-id');
 })
 
