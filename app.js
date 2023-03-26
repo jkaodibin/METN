@@ -10,6 +10,7 @@ let indexRouter = require('./src/routes/index');
 let profilsRouter = require('./src/routes/profils');
 let dashboardRouter = require('./src/routes/dashboard');
 let offreRouter = require('./src/routes/offres');
+let inscriptionRouter = require('./src/routes/inscription');
 
 const app = express();
 
@@ -28,6 +29,7 @@ app.use('/', indexRouter);
 app.use('/profils', profilsRouter);
 app.use('/myAccount', dashboardRouter);
 app.use('/offres', offreRouter);
+app.use('/inscription', inscriptionRouter);
 
 
 
