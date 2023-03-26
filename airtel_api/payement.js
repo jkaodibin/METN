@@ -5,7 +5,8 @@ const getToken = require("./getToken");
 const PAYMENT_URL = "https://openapiuat.airtel.africa/merchant/v1/payments/";
 
 router.post("/", async (req, res) => {
-  let { reference, subscriber, transaction} = req.body;
+  let { reference, subscriber, transaction} = req.body.datas;
+  
   try {
     const data = {
       reference,

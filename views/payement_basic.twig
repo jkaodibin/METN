@@ -1,0 +1,36 @@
+ {% extends 'layout.twig' %}
+{% block body %}
+ <div class="container" id="payement">
+ <div class="row contact">
+          <div class="col-md-6 contact-form">
+            <h3 class="content-ct float-left"> Methode de Payement Airtel Money</h3>
+            <form class="form-horizontal" data-toggle="validator" onsubmit="payement(event)" role="form">
+              <div class="form-group">
+                <label for="name" class="col-sm-3 control-label">Nom<sup>*</sup></label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="name_payement" name="name" placeholder="John Doe" required>
+                  <div class="help-block with-errors pull-right"></div>
+                  <span class="form-control-feedback" aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="number" class="col-sm-3 control-label">Numero<sup>*</sup></label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="number_payement" maxlength="9" name="number" placeholder="33 ** *** **" required>
+                  <div class="help-block with-errors pull-right"></div>
+                  <span class="form-control-feedback" aria-hidden="true"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <button type="submit" id="submit" name="submit" class="btn btn-yellow pull-right">Valider <span class="ti-arrow-right"></span></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4 col-md-offset-1 content-ct">
+            <img src="https://www.airtel.co.ug/assets/images/ug/Mr_Money_1.png" width="300" alt="">
+          </div>
+        </div>
+ </div>
+{% endblock %}
