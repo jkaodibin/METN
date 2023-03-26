@@ -70,7 +70,7 @@ ScrollTrigger.defaults({
 
 $('.chat').on('click' ,function () {
     $('.chatContainer').removeClass('hide')
-    $('.chatContainer .messagebody').html('')
+    $('.chatContainer .messagebody').html(' ')
     let userId = $(this).attr('data-id');
 })
 
