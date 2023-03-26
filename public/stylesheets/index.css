@@ -102,7 +102,7 @@ border: 5px solid var(--blue);
 .offre-image_survole {
     z-index: -1;
     background: rgb(0,0,255);
-background: radial-gradient(circle, rgba(0,0,255,1) 0%, rgba(17,17,26,0.2861519607843137) 100%);
+    background: radial-gradient(circle, rgba(0,0,255,1) 0%, rgba(17,17,26,0.2861519607843137) 100%);
 }
 .offre-image_survole2,
 .offre-image_survole1 {
@@ -211,8 +211,10 @@ background: radial-gradient(circle, rgba(0,0,255,1) 0%, rgba(17,17,26,0.28615196
 .abonnement-standard h2 {
     color: red;
 }
-.abonnement-standard {
-    transform: scale(1.1);
+@media (min-width:992px) {
+    .abonnement-standard {
+        transform: scale(1.1);
+    }
 }
 .abonnement-premium h2 {
     color: blue;
@@ -236,31 +238,96 @@ background: radial-gradient(circle, rgba(0,0,255,1) 0%, rgba(17,17,26,0.28615196
     padding: 15px;
     border-radius: 0 0 10px 10px;
 }
-
-.abonnement-basic .link a,
+.basic button.link,
+.basic .abonnement button.link,
+.abonnement-basic button,
 .acces-basic {
     background-color: #11111a;
     color: var(--white);
+    border: 1px solid;
 }
-.abonnement-standard .link a,
+.basic button.link:hover,
+.basic .abonnement button.link:hover,
+.abonnement-basic button:hover {
+    background-color: white;
+    color: #11111a;
+    border: 1px solid #11111a ;
+}
+.standard button.link,
+.standard .abonnement button.link,
+.abonnement-standard button,
 .acces-standard {
     background-color: red;
     color: var(--white);
+    border: 1px solid red;
 }
-.abonnement-premium .link a,
+.standard button.link:hover,
+.standard .abonnement button.link:hover,
+.abonnement-standard button:hover {
+    background-color: white;
+    color: var(--red);
+    border: 1px solid red;
+}
+.premium button.link,
+.premium .abonnement button.link,
+.abonnement-premium button,
 .acces-premium {
     background-color: blue;
     color: var(--white);
+    border: 1px solid blue;
+    transition: all 0.2s ease-in-out;
 }
-.abonnement .link a{
+.premium button.link:hover,
+.premium .abonnement button.link:hover,
+.abonnement-premium button:hover {
+    background-color: white;
+    color: var(--blue);
+    border: 1px solid blue;
+    transition: all 0.2s;
+}
+.modal-body button.link,
+.abonnement button{
     padding: 15px 40px;
     color: var(--white);
     border-radius: 50px;
+    border: none;
 }
 .type_abonnement {
     margin: 100px 0;
 }
-
+.airtel-money {
+    text-align: center;
+}
+.airtel-money img {
+    max-width: 20%;
+}
+/* type modale */
+.premium .modal-title {
+    color: blue;
+}
+.standard .modal-title {
+    color: red;
+}
+.basic .modal-title {
+    color: #11111a;
+}
+.modal-body .price {
+    background: black;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 100px;
+    padding: 5px;
+    position: static;
+}
+.btn-red {
+    background-color: red;
+    border: 2px solid red;
+    color: white;
+}
+.btn-red:hover {
+    border: 2px solid red;
+}
 /* footer */
 .footerPage {
     padding: 20px;
@@ -330,7 +397,7 @@ background: radial-gradient(circle, rgba(0,0,255,1) 0%, rgba(17,17,26,0.28615196
 }
 .intro h1, 
 .intro p {
-    color: #23236a;
+    color: #333399;
 } 
 label:not(label:first-of-type) {
     display: block;
