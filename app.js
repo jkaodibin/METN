@@ -32,7 +32,6 @@ let authApi= require('./src/api/auth.api.js');
 let userApi= require('./src/api/user.api.js');
 let bidApi= require('./src/api/bid.api.js');
 let messageApi= require('./src/api/message.api.js');
-let socketAuth=require('./src/api/socket.api.js')
 
 const app = express();
 var server = http.createServer(app);
@@ -77,14 +76,15 @@ const io = new Server(server,{
     let online=[]
     io.on("connection", (socket) => {
         socket.on("addOnlineUser", () => {
-            const userId=jwtDecode(cookie.parse(socket.handshake.headers.cookie).jwt).id
-            if(!online.find((e)=>{e.userId===userId})){
-                online=[...online,{userId,socketId:socket.id}]
+            if(socket.handshake.headers.cookie){
+                const userId=jwtDecode(cookie.parse(socket.handshake.headers.cookie).jwt).id
+                if(!online.find((e)=>{e.userId===userId})){
+                    online=[...online,{userId,socketId:socket.id}]
+                }
             }
-            console.log(online)
         })
         socket.on("message", ({msg,to}) => {
-            const receiverOnline = connected.find((e)=>e.userId===to)
+            const receiverOnline = online.find((e)=>e.userId===to)
             if(receiverOnline){
                 io.to(socket.Id).emit("message",msg);
             }
