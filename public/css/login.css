@@ -77,12 +77,12 @@
     margin-top: 0.938rem;
   }
   
-  .form-control {
+  #login-form .form-control {
     position: relative;
     margin: 1.25rem 0 2.5rem;
   }
   
-  .form-control input {
+  #login-form .form-control input {
     background: transparent;
     border: 0;
     border-bottom: 1px #fff solid;
@@ -92,21 +92,21 @@
     font-size: 1.125rem;
   }
   
-  .form-control input:focus {
+  #login-form .form-control input:focus {
     outline: 0;
     border-bottom-color: #c2c25a;
   }
   
-  .form-control label {
+  #login-form .form-control label {
     position: absolute;
     top: 0.938rem;
     left: 10;
   }
-  .form-control{
+  #login-form .form-control{
     padding-bottom: 2px !important;
     height: auto !important;
   }
-  .form-control label span {
+  #login-form .form-control label span {
     display: inline-block;
     font-size: 1.125rem;
     min-width: 0.313rem;
@@ -114,8 +114,8 @@
     
   }
   
-  .form-control input:focus + label span,
-  .form-control input:valid + label span {
+  #login-form .form-control input:focus + label span,
+  #login-form .form-control input:valid + label span {
     color: #c2c25a;
     transform: translateY(-1rem);
   }

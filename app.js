@@ -13,6 +13,8 @@ const jwtDecode = require("jwt-decode");
 const { Server } = require("socket.io");
 
 let indexRouter = require("./src/routes/index");
+let signUpRouter = require("./src/routes/signUp");
+let loginRouter = require("./src/routes/login");
 
 // METHODE DE PAYEMENT AIRTEL_MONEY
 let payement = require("./airtel_api/payement");
@@ -42,6 +44,8 @@ app.use("/plugins/", express.static(__dirname + "/node_modules/"));
 app.use(cors());
 
 app.use("/", indexRouter);
+app.use("/login", loginRouter);
+app.use("/signup", signUpRouter);
 
 app.use("/api/payement", payement);
 app.use("/api/refund", refund);

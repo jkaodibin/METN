@@ -12,7 +12,7 @@ function payement(event) {
       msisdn: numero,
     },
     transaction: {
-      amount: 1000,
+      amount: 10000,
       country: "MG",
       currency: "MGA",
       id: random_id,
@@ -23,7 +23,7 @@ function payement(event) {
     .post("http://localhost:3000/api/payement", { datas })
     .then((response) => {
       console.log(response);
-      alert("Formulaire envoyé !");
+      alert("Vous avez effectuer un abonnement mensuel de 10.000 Ar ! Veillez valider votre paiement sur votre mobile dès maintenant");
       window.location.replace("http://localhost:3000/");
     })
     .catch((error) => {

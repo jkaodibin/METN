@@ -1,4 +1,4 @@
-const labels = document.querySelectorAll(".form-control label");
+const labels = document.querySelectorAll("#login-form .form-control label");
 
 labels.forEach((label) => {
   label.parentElement.querySelector('input').style.height='50px !important'
@@ -15,8 +15,8 @@ document.getElementById('login-form-btn').addEventListener('click',async functio
         email:document.querySelector('input[name="email"]').value, password:document.querySelector('input[name="password"]').value
       })
       .then(function (response) {
-        alert('ok')
-        location.href='http://localhost:3000/payement'
+        alert('Connexion Valide')
+        location.href='http://localhost:3000/payement_basic'
       })
       .catch(function (err) {
         var err=err.response.data.errors.email || err.response.data.errors.password
