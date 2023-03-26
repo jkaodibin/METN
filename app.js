@@ -84,7 +84,7 @@ const io = new Server(server,{
             console.log(online)
         })
         socket.on("message", ({msg,to}) => {
-            const receiverOnline = connected.find((e)=>e.userId===to)
+            const receiverOnline = online.find((e)=>e.userId===to)
             if(receiverOnline){
                 io.to(socket.Id).emit("message",msg);
             }
