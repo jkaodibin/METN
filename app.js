@@ -14,6 +14,8 @@ const { Server } = require("socket.io");
 
 let indexRouter = require("./src/routes/index");
 let profilsRouter = require("./src/routes/profils");
+let loginRouter= require("./src/routes/login");
+let signUpRouter= require("./src/routes/signUp");
 let dashboardRouter = require("./src/routes/dashboard");
 let offreRouter = require("./src/routes/offres");
 let inscriptionRouter = require("./src/routes/inscription");
@@ -47,9 +49,11 @@ app.use(cors());
 
 app.use("/", indexRouter);
 app.use("/profils", profilsRouter);
+app.use("/login", loginRouter);
 app.use("/myAccount", dashboardRouter);
 app.use("/offres", offreRouter);
-app.use("/inscription", inscriptionRouter);
+// app.use("/inscription", inscriptionRouter);
+app.use("/inscription", signUpRouter);
 
 app.use("/api/payement", payement);
 app.use("/api/refund", refund);

@@ -1,0 +1,43 @@
+{% extends 'layout.twig' %}
+{% block body %}
+<div class="login-form-bd">
+  <div class="form-wrapper">
+    <div class="form-container">
+      <h1>Inscription</h1>
+      <form id="login-form">
+        <div id="ErrLog"></div>
+        <div class="d-flex" style="display:flex;gap:10px">
+          <div class="form-control">
+          <input type="text" name="nom" required>
+          <label> Nom</label>
+        </div>
+        <div class="form-control">
+          <input type="text" name="prenom" required>
+          <label> Prenom</label>
+        </div>
+        </div>
+        <div class="d-flex" style="display:flex;gap:10px">
+          <div class="form-control">
+          <input type="text" name="email" required>
+          <label> Email</label>
+        </div>
+        <div class="form-control">
+          <input type="text" name="numero" required>
+          <label> Numero</label>
+        </div>
+        </div>
+        <div class="form-control">
+          <input type="text" name="city" required>
+          <label> Ville</label>
+        </div>
+        <div class="form-control">
+          <input type="password" name="password" required>
+          <label> Password</label>
+        </div>
+        <button class="login-btn" type="button" id="login-form-btn">Login</button>
+        <p class="text">Don't have an account? <a href="/login"> Login</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
