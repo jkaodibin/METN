@@ -20,6 +20,10 @@
 }
 .header_image {
     position: relative;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.596)),url('/images/fond.jpg');
+    background-size: cover;
+    height: 600px;
+    clip-path: polygon(0 0,100);
 }
 /* .header_image img {
     width: 100%;
